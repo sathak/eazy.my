@@ -1,0 +1,45 @@
+﻿.navbar li .glyphicon {
+    margin-right: 10px;
+}
+
+/* Highlighting rules for nav menu items */
+.navbar .navbar-nav .active a,
+.navbar .navbar-nav .active a:hover,
+.navbar .navbar-nav .active a:focus {
+    background-image: none;
+    background-color: #4189C7;
+    color: white;
+}
+
+.navbar-default {
+    background-color: #fff !important;
+    background-image: none;
+}
+
+.navbar-brand {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+    .navbar-brand .brand-name {
+        font-size: 30px;
+        font-weight: 700;
+        color: #bb0a1e;
+    }
+
+    .navbar-brand .brand-subname {
+        font-size: 15px;
+        font-weight: 400;
+        color: #bb0a1e;
+    }
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #2d2d2d;
+}
+
+@media (min-width: 768px) {
+    /* On large screens, convert the nav menu to a vertical sidebar */
+    .navbar-nav {
+        margin-left: 10%;
+    }
+}
