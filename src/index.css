@@ -1,0 +1,91 @@
+
+html, body {
+    padding-top: 25px;
+    background: #ededed;
+    height:100% ;
+}
+
+.container-body {
+    background: #fff;
+    margin-top:10px;
+    /*height:100%;*/
+    margin-bottom:10px;
+    width: 90%;
+}
+[data-reactroot] {
+    height: 100% !important;
+}
+#root{
+    height:100%;
+}
+.main {
+    height: 100%;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    top: 10px;
+    margin-bottom: 10px;
+    height: 200px;
+}
+.card:hover img{
+    animation-name: opacity;
+    
+    animation-duration: 1s;
+    
+}
+.card .card-body {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.card .card-title{
+    width:140px;
+    text-overflow: ellipsis;
+    color:#2e2e2e;
+    padding: 0;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  margin-left: -8px;
+  white-space: pre-wrap;
+}
+.card-footer{padding:.75rem 1.25rem;bottom: 0px !important;position: absolute;font-size: 15px;
+    font-weight: 600;
+    color: #bb0a1e;
+}
+.card-footer:last-child{border-radius:0 0 calc(.25rem - 1px) calc(.25rem - 1px)}
+    /* On mouse-over, add a deeper shadow */
+    .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+
+/* Add some padding inside the card container */
+.card-body {
+    padding: 2px 16px;
+}
+
+.navbar .navbar-nav .active a, .navbar .navbar-nav .active a:hover, .navbar .navbar-nav .active a:focus {
+    background-image: none;
+    background-color: #e69da7 !important;
+    color: white;
+}
+
+@media (max-width: 767px) {
+    /* On small screens, the nav menu spans the full width of the screen. Leave a space for it. */
+    html, body {
+        padding-top: 25px;
+    }
+    .container-body {
+        /* height: 100%; */
+    }
+        .card {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .card .card-title{
+        width: 115px;
+
+    }
+    }
