@@ -22,8 +22,13 @@ class Home extends Component {
             <div>
                 <h3>Listings</h3>
                 <div className="col-md-12">
+<<<<<<< HEAD
                 {this.props.products.map((home,index) =>
                         <div className="col-md-2 col-sm-6 col-xs-6" key={index}>
+=======
+                {this.props.products.map(home =>
+                        <div className="col-md-2 col-sm-6 col-xs-6">
+>>>>>>> 02df4d64282ca021d33a7c6f76b6234189faa369
                             <Link to={'/viewItem/'+home.id}>
                                 <div className="card" >
                                     <img className="card-img-top"  src={require(`../image/${home.id}.png`)} alt="Card image cap" />
