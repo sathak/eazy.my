@@ -27,7 +27,7 @@ requestViewItem:id=>async (dispatch, getState) => {
         
         return;
     }
-
+    dispatch({ type: requestProductListsType });
 
     const url = `http://5b35ede16005b00014c5dc86.mockapi.io/view/`+id;
     const response = await fetch(url);
