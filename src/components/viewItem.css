@@ -1,4 +1,4 @@
-﻿img {
+img {
     max-width: 100%;
 }
 
@@ -400,13 +400,16 @@ a:hover, a:focus {
     .webInfo{
         display: none;
     }
-    .mobInfo{
+    .mobInfo {
         display: block;
-        bottom: 0px !important;position: fixed;
+        bottom: 0px !important;
+        position: fixed;
         z-index: 20;
         background: #fff;
         padding: 10px;
-        margin-left: -20px;
+        left: 0px;
+        width: 100%;
+        margin: 0;
     }
     .btnWidth{
         width: 100px;
