@@ -15,7 +15,7 @@ export const actionProductListCreators = {
         const response = await fetch(url);
         const _forecasts = await response.json();
         const products =_forecasts.data;
-        dispatch({ type: receiveProductListsType,  products });
+        dispatch({ type: receiveProductListsType,  products ,loading:false});
     }
 
    
@@ -35,6 +35,6 @@ requestViewItem:id=>async (dispatch, getState) => {
     const Item =[];
     Item.push(_forecasts.data) ;
     console.log(Item);
-    dispatch({ type: receiveViewItemType,  Item });
+    dispatch({ type: receiveViewItemType,  Item ,loading:false});
 }
 };
