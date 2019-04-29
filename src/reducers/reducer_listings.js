@@ -1,6 +1,6 @@
 import { requestProductListsType, receiveProductListsType,receiveViewItemType } from '../actions/listings-action';
 
-const initialState = { products: [],Item:[], isLoading: false };
+const initialState = { products: [],Item:[], loading: true };
 
 export const reducer = (state, action) => {
     state = state || initialState;
@@ -8,7 +8,7 @@ export const reducer = (state, action) => {
     if (action.type === requestProductListsType) {
         return {
             ...state,
-            isLoading: true
+            loading: true
         };
     }
 
@@ -16,7 +16,7 @@ export const reducer = (state, action) => {
         return {
             ...state,
             products: action.products,
-            isLoading: false
+            loading: action.loading
         };
     }
 
@@ -24,7 +24,7 @@ export const reducer = (state, action) => {
         return {
             ...state,
             Item: action.Item,
-            isLoading: false
+            loading: action.loading
         };
     }
 
