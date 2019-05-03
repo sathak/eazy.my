@@ -11,7 +11,7 @@ export const actionProductListCreators = {
 
         dispatch({ type: requestProductListsType });
 
-        const url = `http://5b35ede16005b00014c5dc86.mockapi.io/list`;
+        const url = `https://5b35ede16005b00014c5dc86.mockapi.io/list`;
         const response = await fetch(url);
         const _forecasts = await response.json();
         const products =_forecasts.data;
@@ -29,7 +29,7 @@ requestViewItem:id=>async (dispatch, getState) => {
     }
     dispatch({ type: requestProductListsType });
 
-    const url = `http://5b35ede16005b00014c5dc86.mockapi.io/view/`+id;
+    const url = `https://5b35ede16005b00014c5dc86.mockapi.io/view/`+id;
     const response = await fetch(url);
     const _forecasts = await response.json();
     const Item =[];
