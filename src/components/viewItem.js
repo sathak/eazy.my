@@ -6,7 +6,9 @@ import { actionViewItemCreators } from '../actions/listings-action';
 import './viewItem.css';
 import LoadingSpinner from './LoadingSpinner';
 class viewItem extends Component {
-
+ componentDidMount() {
+    window.scrollTo(0, 0);
+  }
     //view Methods
     componentWillMount() {
         // This method runs when the component is first added to the page
