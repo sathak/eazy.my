@@ -29,6 +29,7 @@ html, body {
     top: 10px;
     margin-bottom: 10px;
     height: 200px;
+    text-align:center;
 }
 .card:hover img{
     animation-name: opacity;
